@@ -21,7 +21,7 @@ public class Varlable {
 		System.out.println("이력변경추가");
 		
 		// 깃에서 수정한 작업입니다.
-		system.out.println("깃에서작업함");
+		System.out.println("깃에서작업함");
 		
 		System.out.println(c1);
 		System.out.println(result);
