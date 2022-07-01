@@ -17,6 +17,9 @@ public class Varlable {
 		//System.out.println(c1++);
 		//}
 		
+		//이력변경추가 2022.07.01 12:55
+		System.out.println("이력변경추가");
+		
 		System.out.println(c1);
 		System.out.println(result);
 		System.out.println(resultl);
