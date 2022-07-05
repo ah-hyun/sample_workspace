@@ -8,17 +8,32 @@ public class MethodExample01 {
 //	showInfo("홍길동", 20);
 //	showInfo("김아현", 27);
 //	printStar(4, "야호");
-	printGugudan(5);
+	printGugudan(10);
 	}
 	
 	public static void printGugudan(int num) {
-		for (int i = 1; i <= 9; i++) {
+		for (int i = 1; i < 10; i++) {
 		System.out.println(num + " * " + i + " = " + (num*i) );
 		} 
 		
 		
 	}
-
+//
+	public static void gugudan() {
+		int i, dan;
+		for (dan = 2; dan <= 9; dan++) {
+			System.out.print("[" + dan + "단]\t");
+		}
+		System.out.println();
+		for (i = 1; i <= 9; i++) {
+			for (dan = 2; dan <= 9; dan++) {
+				System.out.print(dan + "*" + i + "=" + i * dan + "\t");
+			}
+			System.out.println();
+		}
+	}
+	
+	
 	
 	public static void printStar(int times, String shape) {
 		for (int i = 1; i <= times; i++) {
