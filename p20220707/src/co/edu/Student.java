@@ -1,5 +1,8 @@
 package co.edu;
 
+/*
+클래스 연습 StudentMain 사용.
+*/
 public class Student {
 	// 필드.
 	private String sno; //학생번호
@@ -29,13 +32,13 @@ public class Student {
 	}
 	
 	public String getSno() { //학번을 반환.
-		return this.sno;
+		return sno;
 	}
 	public String getName() {
-		return this.name;
+		return name;
 	}
 	public int getScore() {
-		return this.score;
+		return score;
 	}
 	// 전체 정보를 보여주는 showInfo()
 	public void showInfo() {

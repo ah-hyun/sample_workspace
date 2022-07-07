@@ -1,8 +1,15 @@
 package co.edu;
 
+/*
+ 정적메소드, 정적필드 사용.
+*/
 public class StudentMain {
-
+	private static String name;
 	public static void main(String[] args) {
+		
+		System.out.println(args[0]);		
+		System.out.println(args[1]);
+		
 		Student kim = new Student();
 		kim.setSno("22-001");
 		kim.setName("김민수");
@@ -26,10 +33,16 @@ public class StudentMain {
 		course.addStudent(han);
 
 		course.getStudents();
+		
 		// 최고점 학생 정보 보기.
 		System.out.println("최고점수 학생: ");
 		Student maxStudent = course.getMaxStudent();
 		maxStudent.showInfo();
+	
+		// 평균 구하기
+		System.out.println("반 평균: ");
+		System.out.println(course.getAvgScore());
+	
 	}
 
 }

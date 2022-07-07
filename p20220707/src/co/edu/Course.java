@@ -1,5 +1,8 @@
 package co.edu;
 
+/*
+클래스 연습 StudentMain 사용.
+*/
 public class Course {
 	// 필드
 	private String tname;
@@ -41,7 +44,7 @@ public class Course {
 	// 학생정보 등록.
 	public void addStudent(Student student) {
 		for (int i = 0; i < students.length; i++) {
-			if (students[i] != null) {
+			if (students[i] == null) {
 				students[i] = student;
 				break;
 			}

@@ -1,6 +1,11 @@
 package co.edu.compound;
 
 import java.util.Date;
+/*
+	등록/ 조회/ 수정/ 삭제/ 리스트
+	id : user1, passwd : 1212 => 로그인 되었습니다!
+							  => 아이디, 비밀번호를 확인하세요!
+*/
 import java.util.Scanner;
 
 public class BoardApp {
@@ -8,6 +13,28 @@ public class BoardApp {
 	public static void main(String[] args) {
 		Board[] boards = new Board[100];
 		Scanner scn = new Scanner (System.in);
+		String myid = "user1";
+		String mypw = "1212";
+
+		// 로그인 처리 기능.
+	
+		boolean lg = true;
+		while (lg) {
+			
+			System.out.println("아이디를 입력하세요. >>");
+			String id = scn.nextLine();
+			
+			System.out.println("패스워드를 입력하세요. >>");
+			String pw = scn.nextLine();
+			
+			if (myid.equals(id) && mypw.equals(pw)) {
+				System.out.println("로그인 되었습니다!");
+				lg = false;
+			} else if (myid != id && mypw != pw) {
+				System.out.println("아이디와 비밀번호를 확인해주세요!");
+			
+			}
+		}
 		
 		boolean run = true;
 		
@@ -64,6 +91,7 @@ public class BoardApp {
 					else if (boards[i] == null) {
 							
 						System.out.println("등록되지 않은 데이터입니다.");
+						break;
 						}
 					
 						}
@@ -83,7 +111,7 @@ public class BoardApp {
 				if  (boards[i].getTitle().equals(deleteTirle)) {
 						boards[i] = null;
 						System.out.println("삭제되었습니다.");
-					break;
+						break;
 				}
 			}
 				
