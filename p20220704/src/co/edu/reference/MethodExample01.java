@@ -8,29 +8,37 @@ public class MethodExample01 {
 //	showInfo("홍길동", 20);
 //	showInfo("김아현", 27);
 //	printStar(4, "야호");
-	printGugudan(10);
+//		gugudan();
+	
+//	public static void gugudan() {
+//		for (int i = 1; i <= 9; i++) {
+//			for (int j = 2; j <= 9; j++) {
+//				System.out.printf("%2d * %2d = %2d ", j, i, j*i);
+//			}
+//		System.out.println();
+		}
+	{
 	}
 	
-	public static void printGugudan(int num) {
-		for (int i = 1; i < 10; i++) {
-		System.out.println(num + " * " + i + " = " + (num*i) );
-		} 
-		
-		
-	}
-//
-	public static void gugudan() {
-		int i, dan;
-		for (dan = 2; dan <= 9; dan++) {
-			System.out.print("[" + dan + "단]\t");
-		}
-		System.out.println();
-		for (i = 1; i <= 9; i++) {
-			for (dan = 2; dan <= 9; dan++) {
-				System.out.print(dan + "*" + i + "=" + i * dan + "\t");
-			}
-			System.out.println();
-		}
+//	
+//	public static void printGugudan(int num) {
+//		for (int i = 1; i < 10; i++) {
+//		System.out.println(num + " * " + i + " = " + (num*i) );
+//		} 
+//		
+
+//	public static void printGugudan() {
+//		int i, dan;
+//		for (dan = 2; dan <= 9; dan++) {
+//			System.out.print("[" + dan + "단]\t");
+//		}
+//		System.out.println();
+//		for (i = 1; i <= 9; i++) {
+//			for (dan = 2; dan <= 9; dan++) {
+//				System.out.print(dan + "*" + i + "=" + i * dan + "\t");
+//			}
+//			System.out.println();
+{
 	}
 	
 	
