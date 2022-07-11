@@ -15,7 +15,7 @@ public class EmployeeArrayList implements EmployeeList{
 	}
 	@Override
 	public void input() {
-		
+		System.out.println("사원 정보를 입력하세요.");
 		
 	}
 	@Override
